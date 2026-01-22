@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "GAS Gemini Dev Assistant",
+  "version": "0.1.0",
+  "permissions": ["identity", "storage"],
+  "host_permissions": [
+    "https://script.googleapis.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "action": { "default_title": "GAS Gemini" },
+  "background": { "service_worker": "sw.js" },
+  "oauth2": {
+    "client_id": "202961428560-fg7fc62uvfg7f6ucn8tq6r8no1mhue2q.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/script.projects"
+    ]
+  }
+}
